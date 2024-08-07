@@ -1,0 +1,235 @@
+.heading-primary {
+  font-size: 3.6rem;
+  display: inline-block;
+}
+
+.heading-secondary {
+  font-size: 2.8rem;
+  display: inline-block;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.heading-h4 {
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.para {
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  padding: 3rem;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #047857;
+  color: #f8fafc;
+}
+
+.balance {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+  padding: 2rem 0;
+  position: relative;
+}
+.balance__amount {
+  color: #047857;
+  flex-grow: 0;
+}
+.balance::after {
+  content: "";
+  height: 1px;
+  width: 10rem;
+  border-bottom: 2px solid #64748b;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.balance::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #e2e8f0;
+  border-radius: 50%;
+  border: hollow;
+  outline-offset: 2px;
+  outline: 1px solid #64748b;
+  z-index: 1;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.balance > * {
+  padding: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1rem rgba(2, 6, 23, 0.1);
+}
+.btn-white {
+  background-color: #dcfce7;
+  color: #020617;
+  outline: #047857;
+  border: 2px solid #047857;
+  outline: none;
+}
+.btn-white:hover {
+  background-color: #047857;
+  color: #f8fafc;
+  border: 2px solid #64748b;
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1rem 2rem rgba(2, 6, 23, 0.2);
+}
+.btn:active, .btn:focus {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.4rem 1rem rgba(2, 6, 23, 0.1);
+}
+
+.header {
+  padding: 1rem 2rem;
+}
+
+.history__trans {
+  display: flex;
+  flex-grow: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.history__trans:last-child {
+  border-bottom: none;
+}
+.history__trans > * {
+  padding: 1rem 0;
+}
+.history__tran {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.history > * {
+  padding: 1rem 0;
+}
+
+.income-expanse {
+  width: 100%;
+  padding: 2rem;
+}
+.income-expanse:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.income-expanse__income, .income-expanse__expanse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.income-expanse > * {
+  padding: 1rem 0;
+}
+
+.new-transection__form {
+  margin-bottom: 1rem;
+}
+.new-transection__input {
+  width: 90%;
+  font-family: inherit;
+  color: inherit;
+  border-radius: 5px;
+  background-color: rgba(253, 230, 138, 0.5);
+  padding: 1rem 2rem;
+  display: block;
+  transition: all 0.3s;
+  border: none;
+}
+.new-transection__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(2, 6, 23, 0.2);
+}
+.new-transection__input:focus:invalid {
+  border-bottom: 3px solid #be123c;
+}
+.new-transection__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  display: block;
+  transition: all 0.3s;
+}
+.new-transection__input:placeholder-shown + .new-transection__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+.new-transection > * {
+  padding: 1rem 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  margin: 0 auto;
+  flex-grow: 1;
+  padding: 1rem;
+  align-items: stretch;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.row:not(:first-child) {
+  display: block;
+  background-image: rgba(248, 250, 252, 0.1);
+  box-shadow: 0 1rem 2rem rgba(2, 6, 23, 0.1);
+  padding: 2rem 4rem;
+}
+.row:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 5rem;
+  background-image: radial-gradient(ellipse 70% 50% at 50% 20%, rgba(226, 232, 240, 0.1), rgba(148, 163, 184, 0.1)) !important;
+}
+
+/*# sourceMappingURL=style.css.map */

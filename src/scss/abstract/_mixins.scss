@@ -1,0 +1,35 @@
+@mixin center-border {
+  &::after {
+    content: "";
+    height: 1px;
+    width: 10rem;
+    border-bottom: 2px solid $color-slate-900;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: $color-slate-200;
+    border-radius: 50%;
+    border: hollow;
+    outline-offset: 2px;
+    outline: 1px solid $color-slate-900;
+    z-index: 1;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin child-row-paddings {
+  & > * {
+    padding: 1rem 0;
+  }
+}

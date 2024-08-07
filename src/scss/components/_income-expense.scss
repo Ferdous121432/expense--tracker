@@ -1,0 +1,18 @@
+.income-expanse {
+  width: 100%;
+  padding: 2rem;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__income,
+  &__expanse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  // Use the child-row-paddings mixin
+  @include child-row-paddings;
+}

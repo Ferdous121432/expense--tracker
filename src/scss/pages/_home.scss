@@ -1,0 +1,10 @@
+.container {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 5rem;
+  background-image: radial-gradient(
+    ellipse 70% 50% at 50% 20%,
+    rgba($color-slate-200, 0.1),
+    rgba($color-slate-400, 0.1)
+  ) !important;
+}

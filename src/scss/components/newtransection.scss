@@ -1,0 +1,43 @@
+.new-transection {
+  &__form {
+    margin-bottom: 1rem;
+  }
+
+  &__input {
+    width: 90%;
+    font-family: inherit;
+    color: inherit;
+    border-radius: 5px;
+    background-color: rgba($color-amber-200, 0.5);
+    padding: 1rem 2rem;
+    display: block;
+    transition: all 0.3s;
+    border: none;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-slate-950, 0.2);
+
+      &:invalid {
+        border-bottom: 3px solid $color-red-700;
+      }
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+  @include child-row-paddings;
+}

@@ -1,0 +1,17 @@
+@import "./abstract/variables.scss";
+@import "./abstract//mixins.scss";
+
+@import "./base/typograpgy.scss";
+@import "./base/utilities.scss";
+@import "./base/base";
+
+@import "./components/balance.scss";
+@import "./components/buttons.scss";
+@import "./components/header.scss";
+@import "./components/history.scss";
+@import "./components/income-expense.scss";
+@import "./components/newtransection.scss";
+
+@import "./layout/layout.scss";
+
+@import "./pages/home.scss";

@@ -1,0 +1,24 @@
+.history {
+  &__trans {
+    display: flex;
+    flex-grow: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    @include child-row-paddings;
+  }
+
+  &__tran {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include child-row-paddings;
+}

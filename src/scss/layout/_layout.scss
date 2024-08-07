@@ -1,0 +1,22 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  margin: 0 auto;
+  flex-grow: 1;
+  padding: 1rem;
+  align-items: stretch;
+  border-radius: 3px;
+  overflow: hidden;
+
+  &:not(:first-child) {
+    display: block;
+    background-image: rgba($color-slate-50, 0.1);
+    box-shadow: 0 1rem 2rem rgba($color-slate-950, 0.1);
+    padding: 2rem 4rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}

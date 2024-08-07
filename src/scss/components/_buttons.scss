@@ -1,0 +1,33 @@
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1rem rgba($color-slate-950, 0.1);
+
+  &-white {
+    background-color: $color-green-100;
+    color: $color-slate-950;
+    outline: $color-green-700;
+    border: 2px solid $color-green-700;
+    outline: none;
+
+    &:hover {
+      background-color: $color-green-700;
+      color: $color-slate-50;
+      border: 2px solid $color-slate-900;
+      transform: translateY(-0.5rem);
+      box-shadow: 0 1rem 2rem rgba($color-slate-950, 0.2);
+    }
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.4rem 1rem rgba($color-slate-950, 0.1);
+  }
+}

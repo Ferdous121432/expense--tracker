@@ -1,0 +1,15 @@
+.balance {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+  padding: 2rem 0;
+  position: relative;
+
+  &__amount {
+    color: $color-green-700;
+    flex-grow: 0;
+  }
+
+  @include center-border;
+  @include child-row-paddings;
+}
