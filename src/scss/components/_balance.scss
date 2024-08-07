@@ -6,8 +6,14 @@
   position: relative;
 
   &__amount {
-    color: $color-green-700;
     flex-grow: 0;
+
+    &-plus {
+      color: $color-green-700;
+    }
+    &-minus {
+      color: $color-red-700;
+    }
   }
 
   @include center-border;

@@ -1,3 +1,8 @@
+// eslint-disable-next-line no-unused-vars
+import React, { useContext } from "react";
+
+import Transections from "./Transections";
+
 function History() {
   return (
     <div className="row">
@@ -5,12 +10,9 @@ function History() {
         <div className="u-center-text">
           <h3 className="heading-h4 ">Transaction History</h3>
         </div>
-        <div className="history__trans">
-          <div className="history__tran">
-            <p className="history__para para">Cash</p>
-            <p className="history__para para">$200</p>
-          </div>
-        </div>
+        <>
+          <Transections />
+        </>
       </div>
     </div>
   );

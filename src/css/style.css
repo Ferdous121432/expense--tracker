@@ -61,8 +61,13 @@ body {
   position: relative;
 }
 .balance__amount {
-  color: #047857;
   flex-grow: 0;
+}
+.balance__amount-plus {
+  color: #047857;
+}
+.balance__amount-minus {
+  color: #be123c;
 }
 .balance::after {
   content: "";
@@ -103,6 +108,7 @@ body {
   border-radius: 3px;
   cursor: pointer;
   box-shadow: 0 0.4rem 1rem rgba(2, 6, 23, 0.1);
+  transition: all 0.3s;
 }
 .btn-white {
   background-color: #dcfce7;
@@ -110,6 +116,7 @@ body {
   outline: #047857;
   border: 2px solid #047857;
   outline: none;
+  transition: all 0.3s;
 }
 .btn-white:hover {
   background-color: #047857;
@@ -129,10 +136,10 @@ body {
 
 .history__trans {
   display: flex;
-  flex-grow: 0;
+  flex-direction: column;
+  align-content: space-between;
+  flex-grow: 1;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
 }
 .history__trans:last-child {
   border-bottom: none;
@@ -143,8 +150,17 @@ body {
 .history__tran {
   display: flex;
   flex-grow: 1;
+  padding: 1rem;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0.2rem 3rem rgba(2, 6, 23, 0.1);
+}
+.history__tran-minus {
+  border-right: 3px solid #be123c;
+}
+.history__tran-plus {
+  border-right: 3px solid #047857;
 }
 .history > * {
   padding: 1rem 0;
