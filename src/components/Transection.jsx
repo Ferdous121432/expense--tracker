@@ -1,7 +1,11 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 
 import { useContext } from "react";
 import { Context } from "./context/Context";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMinus } from "@fortawesome/free-solid-svg-icons";
 
 function Transection({ transection }) {
   const { deleteTransection } = useContext(Context);
@@ -20,7 +24,7 @@ function Transection({ transection }) {
         className="btn btn__delete"
         onClick={() => deleteTransection(transection.id)}
       >
-        -
+        <FontAwesomeIcon icon={faMinus} className="btn__delete-color" />
       </button>
       <p className="history__para para">{transection.text}</p>
       <p className="history__para para">

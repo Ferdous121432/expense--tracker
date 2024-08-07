@@ -100,7 +100,6 @@ body {
 
 .btn {
   display: inline-block;
-  padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
@@ -115,6 +114,7 @@ body {
   color: #020617;
   outline: #047857;
   border: 2px solid #047857;
+  padding: 1rem 2rem;
   outline: none;
   transition: all 0.3s;
 }
@@ -124,6 +124,21 @@ body {
   border: 2px solid #64748b;
   transform: translateY(-0.5rem);
   box-shadow: 0 1rem 2rem rgba(2, 6, 23, 0.2);
+}
+.btn__delete {
+  transition: all 0.3s;
+  background-color: rgba(148, 163, 184, 0.4);
+  color: #020617;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 0;
+  position: absolute;
+  top: 50%;
+  left: -2rem;
+  transform: translate(-50%, -50%);
+}
+.btn__delete-color {
+  color: red;
 }
 .btn:active, .btn:focus {
   transform: translateY(-0.2rem);
@@ -149,6 +164,7 @@ body {
 }
 .history__tran {
   display: flex;
+  position: relative;
   flex-grow: 1;
   padding: 1rem;
   justify-content: space-between;

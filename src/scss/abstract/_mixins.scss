@@ -33,3 +33,10 @@
     padding: 1rem 0;
   }
 }
+
+@mixin abs-left {
+  position: absolute;
+  top: 50%;
+  left: -2rem;
+  transform: translate(-50%, -50%);
+}
