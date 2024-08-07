@@ -21,7 +21,7 @@ function Transection({ transection }) {
       }
     >
       <button
-        className="btn btn__delete"
+        className="history__tran__btn"
         onClick={() => deleteTransection(transection.id)}
       >
         <FontAwesomeIcon icon={faMinus} className="btn__delete-color" />

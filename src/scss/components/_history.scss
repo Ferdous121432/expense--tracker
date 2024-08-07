@@ -30,6 +30,37 @@
     &-plus {
       border-right: 3px solid $color-green-700;
     }
+
+    &__btn {
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 3px;
+      cursor: pointer;
+      box-shadow: 0 0.4rem 1rem rgba($color-slate-950, 0.1);
+      transition: all 0.3s;
+      transition: all 0.3s;
+
+      background-color: rgba($color-slate-400, 0.4);
+      color: $color-slate-950;
+      padding: 0.6rem 1.2rem;
+      outline: none;
+      border: 0;
+      position: absolute;
+      top: 50%;
+      left: 2rem;
+      visibility: hidden;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover &__btn {
+      opacity: 1;
+      visibility: visible;
+      left: -1.5rem;
+    }
   }
 
   @include child-row-paddings;
